@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <ul>
-	<li><a href="index.html">Text</a></li>
+	<li><a href="index.html" class="active">Text</a></li>
   <li><a href="image.html">Image</a></li>
   <li><a href="video.html">Video</a></li>
   <li><a href="table.html">Table</a></li>
+  <li><a href="email.html">Email</a></li>
 </ul>
-<h1>Welcome to my Programming Assignment 1 for CS 185, W21</h1>
-<p>This is Sumeet Chaudhari and I hope you enjoy my page!</p><hr/>
+<h1>Welcome to my Programming Assignment 2 for CS 185, W21</h1>
+<p>This is Sumeet Chaudhari and I hope you enjoy my page!</p>
+<p>PA2 is focused on Javascript and adding interactive / responsive elements.</p><hr/>
+<p>Changes in this PA:</p>
+<ol>
+  <li>Web page is now responsive to device size</li><br/>
+  <li>UI elements now responsive to user click/hover</li><br/>
+  <li>New email tab with validation</li><br/>
+</ol><hr/>
+<p>This section is just to add filler space in order to test the scroll functionality.</p>
+<p>Here are some famous quotes:</p>
+<p><i>"The greatest glory in living lies not in never falling, but in rising every time we fall."</i> - Nelson Mandela</p>
+<p><i>"The way to get started is to quit talking and begin doing."</i> - Walt Disney</p>
+<p><i>"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking."</i> - Steve Jobs</p>
+<p><i>"If life were predictable it would cease to be life, and be without flavor."</i> - Eleanor Roosevelt </p>
+<p><i>"If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough."</i> - Oprah Winfrey</p>
+<p><i>"If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success."</i> - James Cameron</p>
+<p><i>"Life is what happens when you're busy making other plans."</i> - John Lennon</p><hr/>
+<p>Please fill out the following form:</p>
 <form>
   <label>First name</label><br/>
   <input type="text"><br/><br/>
@@ -29,5 +48,7 @@
   <label>By checking this box, you consent to the use of the above information</label><br/><br/>
   <input type="button" value="Submit">
 </form>
+<button id="scroll" onClick="goToTop()">Top</button>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -8,15 +9,41 @@
 <ul>
 	<li><a href="index.html">Text</a></li>
   <li><a href="image.html">Image</a></li>
-  <li><a href="video.html">Video</a></li>
+  <li><a href="video.html" class="active">Video</a></li>
   <li><a href="table.html">Table</a></li>
+  <li><a href="email.html">Email</a></li>
 </ul><br/>
 <div class="pageinfo">
   <div class="grid">
-    <video width="400" height="225" controls><source src="v1.mov" type="video/mp4"></video>
-    <video width="225" height="400" controls><source src="v2.mov" type="video/mp4"></video>
-    <video width="225" height="400" controls><source src="v3.mp4" type="video/mp4"></video>
+    <div class="in_grid">
+	    <video onClick="showVideoOverlay(this)" src="v1.mp4" type="video/mp4" autoplay loop muted></video>
+	</div>
+	<div class="in_grid">
+	    <video onClick="showVideoOverlay(this)" src="v2.mp4" type="video/mp4" autoplay loop muted></video>
+	</div>
+	<div class="in_grid">
+	    <video onClick="showVideoOverlay(this)" src="v3.mp4" type="video/mp4" autoplay loop muted></video>
+	</div>
+	<div class="in_grid">
+	    <video onClick="showVideoOverlay(this)" src="v4.mp4" type="video/mp4" autoplay loop muted></video>
+	</div>
+	<div class="in_grid">
+	    <video onClick="showVideoOverlay(this)" src="v5.mp4" type="video/mp4" autoplay loop muted></video>
+	</div>
+	<div class="in_grid">
+	    <video onClick="showVideoOverlay(this)" src="v6.mp4" type="video/mp4" autoplay loop muted></video>
+	</div>
+	<div class="in_grid">
+	    <video onClick="showVideoOverlay(this)" src="v7.mp4" type="video/mp4" autoplay loop muted></video>
+	</div>
+	<div class="in_grid">
+	    <video onClick="showVideoOverlay(this)" src="v8.mp4" type="video/mp4" autoplay loop muted></video>
+	</div>
   </div>
 </div>
+<button id="scroll" onClick="goToTop()">Top</button>
+<div id="overlay" class="overlay" onClick="hideVideoOverlay()">
+<video id="overlay-item" class="overlay-item" controls></video></div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
