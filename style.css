@@ -88,7 +88,7 @@ th {
     width: 100vw;
 }
 
-.overlay-item {
+.in_overlay {
     left: 50%;
     max-height: 75%;
     max-width: 90%;
@@ -98,7 +98,7 @@ th {
     width: auto;
 }
 
-/* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
+/*Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top*/
 #scroll {
     background-color: #333;
     border-width: 0px;
