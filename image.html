@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
   
 <ul>
 	<li><a href="index.html">Text</a></li>
-  <li><a href="image.html">Image</a></li>
+  <li><a href="image.html" class="active">Image</a></li>
   <li><a href="video.html">Video</a></li>
   <li><a href="table.html">Table</a></li>
+  <li><a href="email.html">Email</a></li>
 </ul><br/>
 <div class="pageinfo">
   <div class="grid">
-    <div><img src="c1.jpg" width="400"></div>
-    <div><img src="c4.jpg" width="400"></div>
-    <div><img src="p1.jpg" height="300"></div>
-    <div><img src="c3.jpg" width="400"></div>
-    <div><img src="c2.jpg" width="400"></div>
-    <div><img src="p2.jpg" width="400"></div>
+      <div class="in_grid">
+          <img onClick="showImgOverlay(this)" src="i1.jpg">
+      </div>
+      <div class="in_grid">
+          <img onClick="showImgOverlay(this)" src="i2.jpg">
+      </div>
+      <div class="in_grid">
+          <img onClick="showImgOverlay(this)" src="i3.jpg">
+      </div>
+      <div class="in_grid">
+          <img onClick="showImgOverlay(this)" src="i4.jpg">
+      </div>
+      <div class="in_grid">
+          <img onClick="showImgOverlay(this)" src="i5.jpg">
+      </div>
+      <div class="in_grid">
+          <img onClick="showImgOverlay(this)" src="i6.jpg">
+      </div>
+      <div class="in_grid">
+          <img onClick="showImgOverlay(this)" src="i7.jpg">
+      </div>
+      <div class="in_grid">
+          <img onClick="showImgOverlay(this)" src="i8.jpg">
+      </div>
   </div>
 </div>
-
+<button id="scroll" onClick="goToTop()">Top</button>
+<div id="overlay" class="overlay" onClick="hideImgOverlay()">
+<img id="overlay-item" class="overlay-item"></div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

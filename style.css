@@ -29,6 +29,14 @@ li a:hover {
   background-color: #111;
 }
 
+img, video {
+    border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 table, td {
     border: 1px solid #000000;
     border-collapse: collapse;
@@ -43,14 +51,66 @@ th {
   color: #ffffff;
 }
 
+.active:link {
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
 .pageinfo {
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 75%;
+  padding-bottom: 60px;
 }
 
 .grid {
+    column-gap: 20px;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    row-gap: 20px;
 }
+
+.in_grid {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.overlay {
+    background-color: rgb(0, 0, 0, 0.5);
+    bottom: 0;
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+}
+
+.overlay-item {
+    left: 50%;
+    max-height: 75%;
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+}
+
+/* Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
+#scroll {
+    background-color: #333;
+    border-width: 0px;
+    color: #ffffff;
+    display: none;
+    padding: 10px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+#scroll:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+} 
